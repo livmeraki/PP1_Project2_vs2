@@ -42,38 +42,19 @@
         <h1>Contact List</h1>
     </div>
 
-  <div class="total">
-    <p>You Have: </p>
-    <p id="counter"></p>
-  </div>
-
 <div class="form">
-    <table>
-    <tr class="to-do">
-        <th><h3>To-Do:</h3></th>
-    </tr>
-    </table>
     <div class="table-responsive">
       <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Address</th>
-            <th scope="col">Phone #</th>
-            <th scope="col">Email</th>
-          </tr>
-          <tr>
+            
             <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
-              <th></th>
+              <br><br>Enter in new contact info: <br><br>
+              <input type="text" id="add-todo" placeholder="Name"><br>
+              <input type="text" id="add-todo2" placeholder="Address"><br>
+              <input type="text" id="add-todo3" placeholder="Phone #"><br>
+              <input type="text" id="add-todo4" placeholder="Email"><br><br>
+              <input type="submit" value="Submit" class="btn btn-primary"><br>
               </form>
-          </tr>
-        </thead>
-        <tbody  id="tasks">
-
-        </tbody>
       </table>
-      <a href="./add.html" class="btn btn-primary">Add</a>
     </div>
 
     <div id="edit-box" role="aria-hidden">

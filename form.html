@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <style>
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="/action_page.php">
+
+        <h2>Complete the Basic Survey to Win $500 </h2>
+        <h4>Student Info</h4>
+        <label for="fname">First name :</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name : </label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="start">Birthday : </label>
+        <input type="date" name="bday" /><br>
+
+        <br>
+
+        <h4>What is your favorite spot in Handong to Study?</h4>
+        <input type="radio" id="PB" name="location" value="Pyeongbong">
+        <label for="PB">Pyeongbong</label><br>
+        <input type="radio" id="LB" name="location" value="Library">
+        <label for="LB">Library</label><br>
+        <input type="radio" id="OH" name="location" value="Ohseuk Study Rooms">
+        <label for="OH">Ohseuk Study Rooms</label><br>
+        <input type="radio" id="CR" name="location" value="Club Room">
+        <label for="CR">Club Room</label><br>
+        <input type="radio" id="EC" name="location" value="Empty Classrooms">
+        <label for="EC">Empty Classrooms</label><br>
+        <input type="radio" id="OT" name="location" value="Other">
+        <label for="OT">Other</label><br>
+
+        <br>
+
+        <h4>What do you do during your free time?</h4>
+        <input type="checkbox" id="activity" name="multimedia" value="multimedia">
+        <label for="vehicle1"> Watch multimedia (Youtube, Netflix, etc)</label><br>
+        <input type="checkbox" id="activity" name="reading" value="reading">
+        <label for="vehicle2"> Read book or magazine </label><br>
+        <input type="checkbox" id="activity" name="talk" value="talk">
+        <label for="vehicle3"> Talk with friends </label> <br>
+
+        <br>
+
+        <h4>Preference</h4>
+        Choose a pet :
+        <select name="pets" id="pets" form="petform">
+            <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+            <option value="Toad">Toad</option>
+            <option value="Owl">Owl</option>
+            <option value="Dragon">Dragon</option>
+        </select> <br>
+        Choose a snack :
+        <select name="snack" id="snack" form="snackform">
+            <option value="Cookie">Cookie</option>
+            <option value="Cake">Cake</option>
+            <option value="Ice Cream">Ice Cream</option>
+            <option value="Cauldron Cakes">Cauldron Cakes</option>
+            <option value="Chocolate Frogs">Chocolate Frogs</option>
+        </select><br>
+
+        <br>
+
+        <h4>How was the survey?</h4>
+        <p><label for="feedback">Feedback:</label></p>
+        <textarea id="feedback" name="feedback" rows="4"
+            cols="50"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+</body>
+
+
+</html>
