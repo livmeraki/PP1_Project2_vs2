@@ -5,7 +5,7 @@ var app = new function() {
     this.tasks = ["Sarang", "Gyeomson", "Yongki", "Nideum"];
     this.addresses = ["Carmichael 101", "Kuyper 309", "SonYangWon 902", "Rodem 220"];
     this.numbers = ["010-1234-5678", "010-9999-9999", "010-1111-1111", "010-8282-1004"];
-    this.emails = ["joy@gmail.com", "haley@naver.com", "never@daum.net", "friends@hotmail.com"];
+    this.emails = ["joyful@gmail.com", "haley@naver.com", "never@daum.net", "friends@hotmail.com"];
     
     this.FetchAll = function() {
       var data = '';
@@ -72,7 +72,6 @@ var app = new function() {
       
     
     };
-
     this.Edit = function (item) {
       var el = document.getElementById('edit-todo');
       window.location.href = "./edit.html";
